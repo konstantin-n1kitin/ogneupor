@@ -1,55 +1,58 @@
 /* Стиль странички запроса */
-body
-{
-  background-repeat: no-repeat;
-/*  BACKGROUND-COLOR: #E4E4E4; */
-  font-family: Arial;
-  font-size: 12px;
-  margin: 0;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-table
-{
-  font-family: Arial; 
-  font-size: 12px; 
-  text-align: center;
-}
-tr
-{
-}
-td
-{
-  font-family: Arial; 
-  font-size: 12px; 
-  text-align: center; 
-}
-h1
-{
-  font-family: Arial;
-  font-size: 16px;
+body {
+    background-repeat: no-repeat;
+    /*  BACKGROUND-COLOR: #E4E4E4; */
+    font-family: Arial;
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
-label
-{
-  font-family: Arial;
-  font-size: 12px;
-  font-weight: bold;
-  color: blue;
+table {
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
 }
 
-/* Стиль календаря */  
-  A:link {
-  COLOR: #00485F;   TEXT-DECORATION: none
+tr {
 }
+
+td {
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+label {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: blue;
+}
+
+/* Стиль календаря */
+A:link {
+    COLOR: #00485F;
+    TEXT-DECORATION: none
+}
+
 A:visited {
-  COLOR: #00485F;   TEXT-DECORATION: none
+    COLOR: #00485F;
+    TEXT-DECORATION: none
 }
+
 A:active {
-  TEXT-DECORATION: none
+    TEXT-DECORATION: none
 }
+
 A:hover {
-  TEXT-DECORATION: underline;
-  font-weight: bold;
-  color: red;
+    TEXT-DECORATION: underline;
+    font-weight: bold;
+    color: red;
 }

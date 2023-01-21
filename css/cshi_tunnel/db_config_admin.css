@@ -1,36 +1,35 @@
-body
-{
-  background-repeat: no-repeat;
-  font-family: Arial;
-  font-size: 12px;
-  margin: 0;
-  padding-bottom: 15px;
-  padding-top: 15px;
+body {
+    background-repeat: no-repeat;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
-table
-{
-  font-family: Arial; 
-  font-size: 12px; 
-  text-align: center;
+
+table {
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
 }
-tr
-{
+
+tr {
 }
-td
-{
-  font-family: Arial; 
-  font-size: 12px; 
-  text-align: left; 
+
+td {
+    font-family: Arial;
+    font-size: 12px;
+    text-align: left;
 }
-h1
-{
-  font-family: Arial;
-  font-size: 16px;
+
+h1 {
+    font-family: Arial;
+    font-size: 16px;
 }
-label
-{
-  font-family: Arial;
-  font-size: 12px;
-  font-weight: bold;
-  color: blue;
+
+label {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: blue;
 }
