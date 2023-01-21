@@ -1,0 +1,44 @@
+﻿  .Switch_Off{ /* Руч или Розжиг */
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(/ASUTP/img/csi_chamber/switch_left.jpg) no-repeat scroll 0px 0px;
+    float:left;
+  }
+  .Switch_On{ /* Авт или Работа */
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(/ASUTP/img/csi_chamber/switch_right.jpg) no-repeat scroll 0px 0px;
+    float:left;
+  }
+	.SwitchMode_On{ /* Розжиг/Работа  Руч/Авт */
+		color:blue;
+		font-size:16px;
+		font-style: normal;
+		font-family: Arial;
+	}
+	.SwitchMode_Off{
+		color:black;
+		font-size:16px;
+		font-style: normal;
+		font-family: Arial;
+	}
+	.analog_value  /* Стиль отображения аналоговых значений */
+	{
+		font-size:16px; 
+		font-weight: 0; 
+		color:#FFFFFF;
+		font-style: normal;
+		font-family: Arial;
+		text-align:left;
+		padding-left: 10px;
+	}
+	td
+	{
+		font-size:16px; 
+		font-weight: normal; 
+		color:#000000;
+		font-style: normal;
+		font-family: Arial;
+	}

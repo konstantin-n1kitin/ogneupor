@@ -1,0 +1,21 @@
+body {
+margin: 0;
+font-family: Verdana;
+}
+
+td.title {
+border: 1px solid #6DAFE0;
+width: 100%;
+background-image: url(ThemeRibbon/ThemeRibbon1.png);
+text-align:center;
+font-size:14px;
+font-family: Verdana;
+}
+
+td.menu {
+padding: 0px;
+}
+
+table.table {
+padding: 0px;
+}

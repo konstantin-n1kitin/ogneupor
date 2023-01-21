@@ -1,0 +1,145 @@
+body
+{
+   background-color: #FFFFFF;
+   background:url(/ASUTP/img/cshi_rotate/mnemo.png);
+   background-repeat: no-repeat;
+   color: #000000;
+/*   overflow-y: scroll; */
+}
+
+div
+{
+   font-family: "Courier New";
+   font-size: 14px;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   color: #000080;
+}
+
+.CustomStyle
+{
+   font-family: "Courier New";
+   font-size: 14px;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   color: #000080;
+}
+	  .analog_value  /* —тиль отображени€ аналоговых значений */
+	{
+		font-size:12px; 
+/*		font-weight: bold;  */
+		font-weight: 0; 
+		color:#000000;
+		font-style: normal;
+		font-family: Arial;
+		width: 100px;
+	}
+
+      .dimosos_On{
+        display:block;
+        width:63px;
+        height:23px;
+        background:url(/ASUTP/img/cshi_rotate/dimosos_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .dimosos_Off{
+        display:block;
+        width:63px;
+        height:23px;
+        background:url(/ASUTP/img/cshi_rotate/dimosos_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+/*      .dimosos_Manual{
+        display:block;
+        width:63px;
+        height:23px;
+        background:url(/ASUTP/img/cshi_rotate/dimosos_off_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      } */
+      .IM{
+        display:block;
+        width:21px;
+        height:21px;
+        background:url(/ASUTP/img/cshi_rotate/IM.png) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .IM_down{
+        display:block;
+        width:21px;
+        height:21px;
+        background:url(/ASUTP/img/cshi_rotate/IM_DOWN.png) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .IM_up{
+        display:block;
+        width:21px;
+        height:21px;
+        background:url(/ASUTP/img/cshi_rotate/IM_UP.png) no-repeat scroll 0px 0px;
+        float:left;
+      }	   
+      .Shiber_On{
+        display:block;
+        width:10px;
+        height:30px;
+        background:url(/ASUTP/img/cshi_rotate/shiber_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Shiber_Off{
+        display:block;
+        width:10px;
+        height:30px;
+        background:url(/ASUTP/img/cshi_rotate/shiber_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+	  .Shiber_Assembled{
+        display:block;
+        width:10px;
+        height:30px;
+        background:url(/ASUTP/img/cshi_rotate/shiber_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+	  .Regulator_Off{
+        display:block;
+        width:10px;
+        height:10px;
+        background:url(/ASUTP/img/cshi_rotate/regulator_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+	  }
+	  .Regulator_On{
+        display:block;
+        width:10px;
+        height:10px;
+        background:url(/ASUTP/img/cshi_rotate/regulator_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+	  }
+	  .MP_On{
+        display:block;
+        width:20px;
+        height:20px;
+        background:url(/ASUTP/img/cshi_rotate/MP_On.png) no-repeat scroll 0px 0px;
+        float:left;
+	  }
+	  .MP_Off{
+        display:block;
+        width:20px;
+        height:20px;
+        background:url(/ASUTP/img/cshi_rotate/MP_Off.png) no-repeat scroll 0px 0px;
+        float:left;
+	  }
+	  .CHP_On{
+        display:block;
+        width:20px;
+        height:20px;
+        background:url(/ASUTP/img/cshi_rotate/CHP_On.png) no-repeat scroll 0px 0px;
+        float:left;
+	  }
+	  .CHP_Off{
+        display:block;
+        width:20px;
+        height:20px;
+        background:url(/ASUTP/img/cshi_rotate/CHP_Off.png) no-repeat scroll 0px 0px;
+        float:left;
+	  }
+	  

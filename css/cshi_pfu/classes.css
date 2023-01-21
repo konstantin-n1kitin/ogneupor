@@ -1,0 +1,637 @@
+body{
+   background-color: #FFFFFF;
+   background-image: url(/ASUTP/img/cshi_pfu/bunker_01.GIF);
+   background-repeat: no-repeat;
+   color: #000000;
+/*   overflow-y: scroll; */
+}
+.analog_value  /* Стиль отображения аналоговых значений */
+{
+  font-size:13px; 
+  font-weight: bold; 
+  color:#000000;
+  font-style: normal;
+  font-family: Arial;
+}
+.analog_bunker_value  /* Стиль отображения аналоговых значений на бункерах*/
+{
+  font-size:13px; 
+  font-weight: bold; 
+  color:#FFFFFF;
+  font-style: normal;
+  font-family: Arial;
+}
+.discret_value  /* Стиль отображения дискретных значений */
+{
+  font-size:13px; 
+  font-weight: bold; 
+  color:#000000;
+  font-style: normal;
+  font-family: Arial;
+}
+.main_mech_name  /* Стиль отображения имен механизмов (основные)*/
+{
+  font-size:13px; 
+  font-weight: bold; 
+  color:#FFFF00;
+  font-style: normal;
+  font-family: Arial;
+}
+.mech_name  /* Стиль отображения имен механизмов*/
+{
+  font-size:13px; 
+  font-weight: bold; 
+  color:#000000;
+  font-style: normal;
+  font-family: Arial;
+}
+.text_value  /* Стиль отображения текстовых значений */
+{
+  font-size:13px; 
+  font-weight: bold; 
+  color:#000000;
+  font-style: normal;
+  font-family: Arial;
+}
+/* Вибратор */
+    .Vibrator_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/vibrator_small_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+    }
+    .Vibrator_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/vibrator_small_off.gif) no-repeat scroll 0px 0px;
+        float:left;
+    }
+/* Питатель */
+    .Pitatel_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/lot_pitatel_small_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+    }
+    .Pitatel_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/lot_pitatel_small_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+    }
+  
+/*  РН */  
+  .RN_On{
+    background-color: lime;
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+  .RN_Off{
+    background-color:#7F7F7F;
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+/* Режим управления РУЧ/АВТ */  
+  .Mode_On{   /* АВТ */
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+  .Mode_Off{  /* РУЧ */
+    background-color: blue;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#FFFFFF;
+    font-style: normal;
+    font-family: Arial;
+  }  
+  .Mode_UnCertain{  /* А/Р */
+    background-color: #7F7F7F;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }  
+/* Режим управления Мест/Дист */  
+  .MD_On{   /* Дист */
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+  .MD_Off{  /* Мест */
+    background-color: blue;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#FFFFFF;
+    font-style: normal;
+    font-family: Arial;
+  }  
+  .MD_UnCertain{  /*М/Д */
+    background-color: #7F7F7F;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+/* Аварийный выключатель (0-On, 1-Off) */
+  .Avar_On{ /* Выкл */
+    background-color: #7F7F7F;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+  .Avar_Off{ /* Вкл */
+    background-color: red;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+/* Старт цикла*/
+  .CycleStart_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+  .CycleStart_Off{
+    background-color: #7F7F7F;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+/* Стоп цикла*/
+  .CycleStop_On{
+    background-color: yellow;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+  .CycleStop_Off{
+    background-color: #7F7F7F;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+/* Механизм (текстовое) */  
+  .Mech_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+  .Mech_Off{
+    background-color: #7F7F7F;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+/* Работа/Наладка */  
+  .WorkAdjustment_On{   /* Работа */
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+  .WorkAdjustment_Off{  /* Наладка */
+    background-color: yellow;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }  
+  .WorkAdjustment_UnCertain{  /*Работа/Наладка */
+    background-color: #7F7F7F;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+/* Перегруз */
+  .Overload_On{
+    background-color: red;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+  .Overload_Off{
+    background-color: #7F7F7F;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }
+  .Overload_UnCertain{  
+    background-color: yellow;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+  }  
+/* Ключ-бирка */  
+  .Key_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/block_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .Key_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/block_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+  }
+/* Уровень в бункере СФП */
+  .BunkerLevelSFP_Off{
+    background-color: #C0C0C0;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }
+  .BunkerLevelSFP_On{
+    background-color: yellow;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }  
+/* Уровень в бункере Этиленгликоля */
+  .BunkerLevelEtGlikol_Off{
+    background-color: #C0C0C0;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }
+  .BunkerLevelEtGlikol_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }  
+/* Весы в рецепте */
+  .ScaleInResipe_Off{
+    background-color: #C0C0C0;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }
+  .ScaleInResipe_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }
+/* Готовность весов */  
+  .ScaleState_Off{
+    background-color: #C0C0C0;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }
+  .ScaleState_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }
+  .ScaleState_Avar{
+    background-color: red;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }
+  .ScaleState_Local{
+    background-color: yellow;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }
+/* Грубо/Точно */
+  .GruboTochno_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }
+  .GruboTochno_Off{
+    background-color: #7F7F7F;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }
+  .GruboTochno_UnCertain{
+    background-color: #7F7F7F;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;
+  }
+/* Конвейер 616А */  
+  .Conveyer616A_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/conveyer616A_off.gif) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .Conveyer616A_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/conveyer616A_on.gif) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .Conveyer616AText_Off{
+    background-color: transparent;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  .Conveyer616AText_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  
+/* Конвейер 616 */  
+  .Conveyer616_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/conveyer616_off.gif) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .Conveyer616_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/conveyer616_on.gif) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .Conveyer616Text_Off{
+    background-color: transparent;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  .Conveyer616Text_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+/* Конвейер 619 */  
+  .Conveyer619Text_Off{
+    background-color: transparent;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  .Conveyer619Text_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  
+/* Элеватор 618-2 */
+  .Elevator618-2_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/elevator618-2_off.gif) no-repeat scroll 0px 0px;   
+        float:left;
+  }
+  .Elevator618-2_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/elevator618-2_on.gif) no-repeat scroll 0px 0px; 
+        float:left;
+  }
+  .Elevator618-2Text_Off{
+    background-color: transparent;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  .Elevator618-2Text_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  
+/* Элеватор 618-1 */
+  .Conveyer618-1_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/conveyer618-1_off.gif) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .Conveyer618-1_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/conveyer618-1_on.gif) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .Conveyer618-1Text_Off{
+    background-color: transparent;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  .Conveyer618-1Text_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  
+/* Элеватор 618-1 */
+  .Ventilyator274_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/ventilator274_off.gif) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .Ventilyator274_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/ventilator274_on.gif) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .Ventilyator274Text_Off{
+    background-color: transparent;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  .Ventilyator274Text_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  
+/* Элеватор 618-1 */
+  .Press_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/Press_off_conveyer_off.gif) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .Press_Off2{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/Press_off_conveyer_on.gif) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .Press_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_pfu/Press_on_conveyer_on.gif) no-repeat scroll 0px 0px;
+        float:left;
+  }
+  .VortexText_Off{
+    background-color: transparent;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }
+  .VortexText_On{
+    background-color: lime;  
+    font-size:13px; 
+    font-weight: bold; 
+    color:#000000;
+    font-style: normal;
+    font-family: Arial;
+    text-align: center;  
+  }

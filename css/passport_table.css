@@ -1,0 +1,133 @@
+/*
+------------------------------------------------------------------------------------------------
+-- STRUCTURE
+------------------------------------------------------------------------------------------------
+*/
+
+/*
+------------------------------------------------------------------------------------------------
+-- FORMATTING
+------------------------------------------------------------------------------------------------
+*/
+
+	#passport_table table {
+		border-collapse:collapse;
+		width:auto;
+	}
+
+	#passport_table thead th{
+		color:#FFF;
+		background-color:#69C;
+		white-space:normal;
+		font-size:12px;
+		text-align:center;
+	}
+
+	#passport_table tbody th
+	{
+		color:#FFF;
+		background-color:#69C;
+		white-space:normal;
+		font-size:12px;
+		text-align:center;
+	}
+	
+	#passport_table tr{
+		border-top:1px dotted #CCC;
+		font-size:11px;
+		
+		}
+		
+	#passport_table tr:first-child{
+		border-top:none;
+		}
+		
+	#passport_table td, #passport_table th{
+		padding:3px 10px 3px 6px;
+		border-bottom:1px solid silver;
+/*		font-size:14px; */
+		/*text-align:left;*/
+		/*white-space:nowrap;*/
+		}
+	td.passport_value {
+		white-space:nowrap;
+		text-align:center;
+		}
+	
+		
+	#passport_table th{
+		text-align:left;
+		}
+		
+	#passport_table tfoot td{
+		padding-top:15px;
+		border:none !important;
+		text-align:right;		
+		}
+		
+	#passport_table caption{
+		font-size:14px;
+		font-weight:bold;
+		border-bottom:1px solid #AAA;
+		padding:3px;
+		}
+		
+/*
+------------------------------------------------------------------------------------------------
+-- SPECIAL
+------------------------------------------------------------------------------------------------
+*/
+
+	/* titles */
+
+		tr.row-group {
+			border-top:none !important;
+		}
+
+		.row-group td {
+			text-align:left;
+			border-bottom: 1px solid #000;
+			font-weight:bold;
+			font-variant:small-caps;
+			height:50px; 
+			vertical-align:bottom;
+			color:#C03;
+		}
+		
+	/* zebra striping */
+
+		.zebra th
+		{
+			padding-left:30px;
+			background-color:#ddd !important;
+		}
+		
+		.zebra td{
+			background-color:#EEEEEE;
+		}
+		
+	/* formatting */
+
+		.red{
+			color:red !important;
+		}
+			
+		.green{
+			color:green;
+		}
+			
+		.blue{
+			color:blue;
+		}
+			
+		.joined{
+			border-left:1px solid #000;
+			border-right:1px solid #000;
+			background:#EEE;
+		}
+		
+	/* form elements */
+		
+		table input, table select{
+			/*width:100%;*/
+		}

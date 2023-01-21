@@ -1,0 +1,17 @@
+div#local_menu_div{
+  display: table-cell;
+  height: 90%; 
+  width: 290px; 
+  position:absolute; 
+  left: 0px; 
+  top: 43px;
+}
+
+div#content_div{
+  display: table-cell;
+  height: 90%; 
+  width: 75%; 
+  position:absolute;  
+  left: 300px; 
+  top: 43px;
+}

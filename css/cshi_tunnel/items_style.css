@@ -1,0 +1,93 @@
+.analog_value  /* —тиль отображени€ аналоговых значений */
+{
+  font-size:12px; 
+  font-weight: bold; 
+  color:#000000;
+  font-style: normal;
+  font-family: Arial;
+  width: 100px;
+}
+.analog_bunker_value  /* —тиль отображени€ аналоговых значений на бункерах*/
+{
+  font-size:13px; 
+  font-weight: bold; 
+  color:#FFFFFF;
+  font-style: normal;
+  font-family: Arial;
+  width: 100px;
+}
+.discret_value  /* —тиль отображени€ дискретных значений */
+{
+  font-size:13px; 
+  font-weight: bold; 
+  color:#000000;
+  font-style: normal;
+  font-family: Arial;
+}
+.main_mech_name  /* —тиль отображени€ имен механизмов (основные)*/
+{
+  font-size:13px; 
+  font-weight: bold; 
+  color:#FFFF00;
+  font-style: normal;
+  font-family: Arial;
+}
+.mech_name  /* —тиль отображени€ имен механизмов*/
+{
+  font-size:13px; 
+  font-weight: bold; 
+  color:#000000;
+  font-style: normal;
+  font-family: Arial;
+}
+.text_value  /* —тиль отображени€ текстовых значений */
+{
+  font-size:13px; 
+  font-weight: bold; 
+  color:#000000;
+  font-style: normal;
+  font-family: Arial;
+}
+  .Ventilator_Off{
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(/ASUTP/img/cshi_tunnel/ventilator_off.gif) no-repeat scroll 0px 0px;
+    float:left;
+  }
+  .Ventilator_On{
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(/ASUTP/img/cshi_tunnel/ventilator_on.gif) no-repeat scroll 0px 0px;
+    float:left;
+  }
+  .Ventilator2_Off{
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(/ASUTP/img/cshi_tunnel/ventilator2_off.gif) no-repeat scroll 0px 0px;
+    float:left;
+  }
+  .Ventilator2_On{
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(/ASUTP/img/cshi_tunnel/ventilator2_on.gif) no-repeat scroll 0px 0px;
+    float:left;
+  }
+  .Ventilator3_Off{
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(/ASUTP/img/cshi_tunnel/ventilator3_off.gif) no-repeat scroll 0px 0px;
+    float:left;
+  }
+  .Ventilator3_On{
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(/ASUTP/img/cshi_tunnel/ventilator3_on.gif) no-repeat scroll 0px 0px;
+    float:left;
+  }
+  

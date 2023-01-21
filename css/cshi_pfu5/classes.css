@@ -1,0 +1,33 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+
+.meh_off{
+	visibility: hidden;
+}
+.meh_on{
+	visibility: visible;
+}
+.rdy_off,.glamp_off,.load_off,.rlamp_off,.ylamp_off,.mixer_off{
+	background-color: #FFFFFF; /*Белый*/
+}
+.rdy_on,.mode_on,.glamp_on,.load_on2,.mixer_on{
+	background-color: #00FF00; /*Зеленый*/
+}
+.load_on,.ylamp_on{
+	background-color: #FFFF00; /*Желтый*/
+}
+.rlamp_on{
+	background-color: #FF0000; /*Красный*/
+}
+.mode_off{
+	background-color: #1E90FF; /*Синий*/
+}

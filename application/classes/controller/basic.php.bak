@@ -1,0 +1,406 @@
+<?php
+defined('SYSPATH') or die('No direct script access.');
+
+class Controller_Basic extends Controller_DefaultTemplate
+{
+  // 		public $template = 'view1';
+		public function action_index()
+		{
+			$scripts = array('js/asku_currents/functions.js');
+			$this->template->scripts = $scripts;
+			$this->template->on_body_load_js = 'SendRequest()';
+			$this->template->title = 'WEB-портал АСУ ТП ООО "Огнеупор"';
+			$data['menutitle']='WEB-портал АСУ ТП ООО "Огнеупор"';
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$content_view = View::factory('home')->render();
+			$this->template->content = $content_view;
+		}
+
+		public function action_cshitpl()
+		{
+			$this->template->title = 'АСУ ТПЛ ЦШИ';
+			$styles = array('css/cshi_tpl/classes.css'=>'screen');
+			$scripts = array('js/cshi_tpl/functions.js',);
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+//			array_merge($this->template->styles, $styles);
+//			array_merge($this->template->scripts, $scripts);
+			$data['menutitle']="Автоматизированная система управления транспортно-поточными линиями ЦШИ";
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest();';
+			$content_view = View::factory('cshi/tpl')->render();
+			$this->template->content = $content_view;
+		}
+
+		public function action_cshipfu()
+		{
+			$this->template->title = 'АСУ линии прессования №2 ПФУ ЦШИ';
+			$styles = array('css/cshi_pfu/classes.css'=>'screen');
+			$scripts = array('js/cshi_pfu/functions.js',);
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+//			array_merge($this->template->styles, $styles);
+//			array_merge($this->template->scripts, $scripts);
+			$data['menutitle']="Автоматизированная система управления линией прессования №2 прессо-формовочного участка ЦШИ";
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest()';
+			$content_view = View::factory('cshi/pfu')->render();
+			$this->template->content = $content_view;
+		}
+		public function action_cshipfu5()
+		{
+			$this->template->title = 'АСУ линии прессования №5 ПФУ ЦШИ';
+			$styles = array('css/cshi_pfu5/classes.css'=>'screen');
+			$scripts = array('js/cshi_pfu5/functions.js',);
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']="Автоматизированная система управления линией прессования №5 прессо-формовочного участка ЦШИ";
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest()';
+			$content_view = View::factory('cshi/pfu5')->render();
+			$this->template->content = $content_view;
+		}
+		public function action_cshipfu3()
+		{
+			$this->template->title = 'АСУ линии прессования №3 ПФУ ЦШИ';
+			$styles = array('css/cshi_pfu3/classes.css'=>'screen');
+			$scripts = array('js/cshi_pfu3/functions.js',);
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']="Автоматизированная система управления линией прессования №3 прессо-формовочного участка ЦШИ";
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest()';
+			$content_view = View::factory('cshi/pfu3')->render();
+			$this->template->content = $content_view;
+		}
+		public function action_cshitunnel()
+		{
+			$styles = array('css/cshi_tunnel/items_style.css'=>'screen',
+			                'css/cshi_tunnel/passport_style.css'=>'screen',
+			                'css/cshi_tunnel/tunnel.css'=>'screen',
+			                'css/cshi_tunnel/jquery-ui-1.8.4.custom.css'=>'screen');
+			$scripts = array('js/cshi_tunnel/functions.js',
+			                 'js/cshi_tunnel/passport.js',
+			                 'js/jquery/jquery-ui-1.8.4.custom.min.js',
+			                 'js/jquery/jquery.js');
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$this->template->title = 'АСУ Туннельная печь №1 ЦШИ';
+			$data['menutitle']='Автоматизированная система управления туннельной печью №1 ЦШИ';
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest()';
+			$content_view = View::factory('cshi/tunnel')->render();
+			$this->template->content = $content_view;
+		}
+
+		public function action_csichamber()
+		{
+			$this->template->title = 'АСУ Камерных сушил № 1,2 ЦСИ';
+			$styles = array('css/csi_chamber/classes.css'=>'screen');
+			$scripts = array('js/csi_chamber/functions.js',);
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']='Автоматизированная система управления камерными сушилами № 1 и № 2 ЦСИ';
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest()';
+			$content_view = View::factory('csi/chamber')->render();
+			$this->template->content = $content_view;
+		}
+
+		public function action_cshireports()
+		{
+			$this->template->title = 'Отчёты ЦШИ';
+			$data['menutitle']='Отчёты ЦШИ';
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$content_view = View::factory('cshi/reports')->render();
+			$this->template->content = $content_view;
+		}
+
+//		public function action_csireports()
+//    {
+//			$this->template->title = 'Отчёты ЦСИ';
+//			$data['menutitle']='Отчёты ЦСИ';
+//			$menu_view = View::factory('menu/main_menu',$data)->render();
+//			$this->template->menu = $menu_view;
+//			$data = array('1'=>array('1'=>'10', '2'=>'15', '3'=>'17'), '2'=>array('1'=>'15', '2'=>'20', '3'=>'23'));
+////			$table = Table::factory()->set_body_data($data)->render();
+//			$table = new Table($data);
+//			$table->set_column_attributes('style', explode(',',',background:#EEE,'));
+////			$table->set_column_attributes('style', explode(',',',border:#000,'));
+//			$table->set_column_titles(array('1'=>'первая колонка','2'=>'вторая колонка','3'=>'третья колонка' ));
+//			$this->template->table = $table->render();
+//			$content_view = View::factory('csi/reports')->render();
+//			$this->template->content = $content_view;
+//		}
+//
+		public function action_askureports()
+		{
+			$this->template->title = 'Отчёты АСКУ ТЭР';
+			$data['menutitle']='Отчёты АСКУ ТЭР';
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$content_view = View::factory('asku/reports')->render();
+			$this->template->content = $content_view;
+		}
+
+		/*public function action_askucurrents()
+    {
+			$styles = array('css/asku_currents/style.css'=>'screen');
+			$scripts = array('js/asku_currents/functions.js');
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$this->template->title = 'АСУ ТП ООО "Огнеупор" АСКУЭ Текущие данные. Кислород';
+			$data['menutitle']='АСУ ТП ООО "Огнеупор" АСКУЭ Отчёты';
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$local_menu_view = View::factory('menu/askucurrents_menu')->render();
+			$this->template->local_menu = $local_menu_view;
+		}*/
+
+		public function action_cshioxygendaily()
+		{
+			$this->template->title = 'АСУ ТП ООО "Огнеупор". Суточный отчёт по потреблению кислорода. ЦШИ.';
+			$date = $this->request->param('id','11-08-08 00:00:00');
+			$report = new Model_Cshidailyreports();
+			$result = $report->cshi_oxygen_daily_report($date);
+			$table = Table::factory($result['data']);
+			$table->set_footer($result['footer']);
+			$this->template->content = $table->render();
+		}
+
+		public function action_cshirotaryfurn()
+		{
+			$this->template->title = 'Вращающаяся печь №1 ЦШИ';
+			$styles = array();
+			$scripts = array('js/cshi_rf1/functions.js');
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']=$this->template->title;
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest();';
+			$content_view = View::factory('cshi/rotaryfurn')->render();
+			$this->template->content = $content_view;
+		}
+
+		public function action_cshirotaryfurn2()
+		{
+			$this->template->title = 'Вращающаяся печь №2 ЦШИ';
+			$styles = array();
+			$scripts = array('js/cshi_rf2/functions.js');
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']=$this->template->title;
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest();';
+			$content_view = View::factory('cshi/rotaryfurn2')->render();
+			$this->template->content = $content_view;
+		}
+		public function action_cshirotary()
+		{
+			$this->template->title = 'АСУ Вращающиеся печи ЦШИ';
+			$styles = array('css/cshi_rotate/rotate.css'=>'screen');
+			$scripts = array('js/cshi_rotary/functions.js');
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']='Автоматизированная система управления вращающимися печами ЦШИ';
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest()';
+			$content_view = View::factory('cshi/rotary')->render();
+			$this->template->content = $content_view;
+		}
+		public function action_testpart()
+		{
+			$this->template->title = 'Test';
+			$styles = array('css/cshi_rotate/rotate.css'=>'screen');
+			$scripts = array('js/cshi_rotary/functions.js');
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']='Test';
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest()';
+			$content_view = View::factory('cshi/testpart')->render();
+			$this->template->content = $content_view;
+		}
+		public function action_cshidesiccators()
+		{
+			$this->template->title = 'Сушильные барабаны ЦШИ';
+			$styles = array();
+			$scripts = array('js/asku_currents/functions.js');
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']=$this->template->title;
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest();';
+			$content_view = View::factory('cshi/desiccators')->render();
+			$this->template->content = $content_view;
+		}
+
+		public function action_csidesiccators()
+		{
+			$this->template->title = 'Сушильные барабаны ЦСИ ДПУ';
+			$styles = array();
+			$scripts = array('js/asku_currents/functions.js');
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']=$this->template->title;
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest();';
+			$content_view = View::factory('csi/desiccators')->render();
+			$this->template->content = $content_view;
+		}
+
+		public function action_csitunneldry()
+		{
+			$this->template->title = 'Туннельные сушила ЦСИ';
+			$styles = array();
+			$styles = array('css/csi_tunneldry/classes.css'=>'screen');
+			$scripts = array('js/csi_tunneldry/functions.js');
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']=$this->template->title;
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest();';
+			$content_view = View::factory('csi/tunneldry')->render();
+			$this->template->content = $content_view;
+		}
+
+		public function action_csicuringroom()
+		{
+			$this->template->title = 'Пропарочные камеры ЦСИ';
+/*			$styles = array();
+			$styles = array('css/csi_tunneldry/classes.css'=>'screen');
+			$this->template->styles = $styles;*/
+			$scripts = array('js/csi_curingroom/functions.js');
+			$this->template->scripts = $scripts;
+			$data['menutitle']=$this->template->title;
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest();';
+			$content_view = View::factory('csi/curingroom')->render();
+			$this->template->content = $content_view;
+		}
+
+		public function action_cshiconscales()
+		{
+			$this->template->title = 'Конвейерные весы ЦШИ';
+			$scripts = array('js/cshi_conscales/functions.js');
+			$this->template->scripts = $scripts;
+			$data['menutitle']=$this->template->title;
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest();';
+			$content_view = View::factory('cshi/conscales')->render();
+			$this->template->content = $content_view;
+		}
+
+		public function action_cshiconscales2()
+		{
+			$data['skip']=$this->request->param('id',0);
+			$this->template->title = 'Конвейерные весы ЦШИ';
+			$scripts = array('js/cshi_conscales/functions.js');
+			$this->template->scripts = $scripts;
+			$data['menutitle']=$this->template->title;
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu ='';
+			$this->template->on_body_load_js = 'SendRequest();';
+			$content_view = View::factory('cshi/conscales2',$data)->render();
+			$this->template->content = $content_view;
+		}
+		public function action_cshiconscales3()
+		{
+			$data['skip']=$this->request->param('id',0);
+			$this->template->title = 'Конвейерные весы ЦШИ';
+			$scripts = array('js/cshi_conscales/functions.js');
+			$this->template->scripts = $scripts;
+			$data['menutitle']=$this->template->title;
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu ='';
+			$this->template->on_body_load_js = 'SendRequest();';
+			$content_view = View::factory('cshi/conscales3',$data)->render();
+			$this->template->content = $content_view;
+		}
+		public function action_cshiinputparam()
+		{
+			$params = array();
+			$tmp_params = explode('&', $this->request->param('id','default'));
+			foreach($tmp_params as $key => $value)
+			{
+				$tmp_param = explode('=', $value);
+				$params[$tmp_param[0]]=$tmp_param[1];
+			}
+			$dt_str = (isset($params['dt']))?$params['dt']:date('d-m-Y');
+			$dt_str=str_replace('-','.',$dt_str);
+			$dt=new datetime ($dt_str);
+			$shift = (isset($params['shift']))?$params['shift']:1;
+			$water = (isset($params['water']))?$params['water']:0;
+			$density = (isset($params['density']))?$params['density']:0;
+			$water=str_replace('-','.',$water);
+			$density=str_replace('-','.',$density);
+			$dbhost = "TPL-server";$dbname = "tpl";$dbuser = "sa";$dbpass = "tpl";
+			$db = new PDO ('odbc:DRIVER={SQL Server};SERVER='.$dbhost.';database='.$dbname.';Uid='.$dbuser.';Pwd='.$dbpass.';');
+			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+			$sql="SELECT id FROM teh_params WHERE dt='".$dt->format('Y-m-d')."' and shift=".$shift;
+			$result = $db->prepare($sql);
+			$result->execute();
+			$tmp_array = $result->fetchAll(PDO::FETCH_ASSOC);
+			//print_r($sql);
+			//print_r($tmp_array);
+			if (count($tmp_array)>0)
+				$sql = "UPDATE teh_params
+						SET dt='".$dt->format('Y-m-d')."',shift=".$shift.",water=".$water.",density=".$density."
+						WHERE dt='".$dt->format('Y-m-d')."' and shift=".$shift;
+			else
+				$sql = "INSERT INTO teh_params (dt,shift,water,density)
+						VALUES ('".$dt->format('Y-m-d')."',".$shift.",".$water.",".$density.")";
+			//print_r($sql);
+			$result = $db->prepare($sql);
+			$result->execute();
+			$this->template->title = 'Ввод параметров ЦШИ';
+			$styles = array('css/calendar/aqua/theme.css'=>'screen');
+			$scripts = array('js/calendar/calendar-setup.js','js/calendar/lang/calendar-ru.js','js/calendar/calendar.js','js/calendar/checkDate.js');
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']=$this->template->title;
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu =$menu_view;
+			$data['shift']=$shift;
+			$data['water']=$water;
+			$data['density']=$density;
+			$data['dt']=$dt_str;
+			$content_view = View::factory('cshi/inputparam',$data)->render();
+			$this->template->content = $content_view;
+		}
+
+/*		public function action_csitunneldry()
+		{
+			$this->template->title = 'Туннельные сушила ЦСИ';
+			$styles = array();
+			$scripts = array('js/csi_tunneldry/functions.js');
+			$this->template->styles = $styles;
+			$this->template->scripts = $scripts;
+			$data['menutitle']=$this->template->title;
+			$menu_view = View::factory('menu/main_menu',$data)->render();
+			$this->template->menu = $menu_view;
+			$this->template->on_body_load_js = 'SendRequest();';
+			$content_view = View::factory('csi/tunneldry')->render();
+			$this->template->content = $content_view;
+		}*/
+
+}
+?>

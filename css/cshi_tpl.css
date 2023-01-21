@@ -1,0 +1,353 @@
+/* Конвейер */
+      .Conveyer_On{
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(img/conveyer_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Conveyer_Off{
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(img/conveyer_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Conveyer_Manual{
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(img/conveyer_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+/* Вращающаяся печь */
+      .VrashPech_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/vrash_pech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .VrashPech_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/vrash_pech_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .VrashPech_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/vrash_pech_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+/* Глинорезная машина */
+      .GlinaCutMashine_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/glina_cut_mashine_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .GlinaCutMashine_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/glina_cut_mashine_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .GlinaCutMashine_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/glina_cut_mashine_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }            
+/* Пластинчатый питатель */
+      .PlastPitatel_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/plast_pit_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlastPitatel_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/plast_pit_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlastPitatel_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/plast_pit_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }                  
+/* Шаровая мельница */
+      .BallsMill_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/balls_mill_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .BallsMill_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/balls_mill_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .BallsMill_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/balls_mill_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+/* Холодильник */
+      .Refregerator_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/refregerator_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Refregerator_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/refregerator_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Refregerator_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/refregerator_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+/* Вентилятор/Дымосос */
+      .Ventilator_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/ventilator_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Ventilator_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/ventilator_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Ventilator_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/ventilator_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+/* Элеватор */
+      .Elevator_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/elevator_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Elevator_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/elevator_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Elevator_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/elevator_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+/* Блокировка */
+      .Block_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/block_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Block_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/block_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Block_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/block_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+/* Грохот */
+      .Grohot_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/grohot_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Grohot_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/grohot_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Grohot_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/grohot_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+/* Тарельчатый питатель */
+      .PlatePitatel_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/plate_pitatel_on.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlatePitatel_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/plate_pitatel_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlatePitatel_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/plate_pitatel_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }      
+/* Магнит */
+      .Magnit_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/magnit_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Magnit_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/magnit_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Magnit_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/magnit_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }           
+/* Сушильный барабан */
+      .SushBaraban_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/sush_baraban_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .SushBaraban_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/sush_baraban_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .SushBaraban_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/sush_baraban_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }     
+/* Камнеотделительные вальцы */
+      .StoneOtdelitVal_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/stone_otdelit_val_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .StoneOtdelitVal_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/stone_otdelit_val_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .StoneOtdelitVal_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/stone_otdelit_val_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }                 
+/* Лотковый питатель */
+      .LotPitatel_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/lot_pitatel_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .LotPitatel_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/lot_pitatel_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .LotPitatel_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/lot_pitatel_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }                 
+/* Дезинтегратор */
+      .Dezintegrator_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/dezintegrator_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Dezintegrator_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/dezintegrator_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Dezintegrator_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(img/dezintegrator_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }                 
+            

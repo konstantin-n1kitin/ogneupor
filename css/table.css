@@ -1,0 +1,140 @@
+/*
+------------------------------------------------------------------------------------------------
+-- STRUCTURE
+------------------------------------------------------------------------------------------------
+*/
+
+/*
+------------------------------------------------------------------------------------------------
+-- FORMATTING
+------------------------------------------------------------------------------------------------
+*/
+
+	#report_table table, #report_table_vent table {
+		border-collapse:collapse;
+		width:auto;
+	}
+
+	#Inner_table table {
+		border-collapse:collapse;
+		width:100%;
+	}
+	
+	#report_table thead th, #report_table_vent thead th{
+		color:#FFF;
+		background-color:#69C;
+		white-space:normal;
+		font-size:11px;
+		text-align:center;
+	}
+
+	#report_table tbody th, #report_table_vent tbody th{
+		padding-left:30px;
+		background-color:#eee;
+		font-weight:bold;
+		vertical-align:top;
+	}
+	
+	#report_table tr, #report_table_vent tr{
+		border-top:1px dotted #CCC;
+		font-size:11px;
+	}
+		
+	#report_table tr:first-child, #report_table_vent tr:first-child{
+		border-top:none;
+	}
+		
+	#report_table td, #report_table th{
+		padding:3px 10px 3px 6px;
+		border-bottom:1px solid silver;
+		text-align:center;
+		white-space:nowrap;
+		width:auto;
+	}
+
+	#report_table_vent td, #report_table_vent th{
+		padding:3px 10px 3px 6px;
+		border-bottom:1px solid silver;
+		text-align:center;
+	}	
+		
+	#report_table th, #report_table_vent th{
+		text-align:left;
+	}
+		
+	#report_table tfoot td, #report_table_vent tfoot td{
+		padding-top:15px;
+		border:none !important;
+		text-align:right;
+	}
+		
+	#report_table caption, #report_table_vent caption{
+		font-size:14px;
+		font-weight:bold;
+		border-bottom:1px solid #AAA;
+		padding:3px;
+	}
+		
+/*
+------------------------------------------------------------------------------------------------
+-- SPECIAL
+------------------------------------------------------------------------------------------------
+*/
+
+	/* titles */
+
+		tr.row-group {
+			border-top:none !important;
+		}
+
+		.row-group td {
+			text-align:left;
+			border-bottom: 1px solid #000;
+			font-weight:bold;
+			font-variant:small-caps;
+			height:50px; 
+			vertical-align:bottom;
+			color:#C03;
+		}
+		
+	/* zebra striping */
+
+		.zebra th
+		{
+			padding-left:30px;
+			background-color:#ddd !important;
+		}
+		
+		.zebra td{
+			background-color:#EEEEEE;
+		}
+		
+	/* formatting */
+
+		.red{
+			color:red !important;
+			}
+			
+		.green{
+			color:green;
+			}
+			
+		.blue{
+			color:blue;
+			}
+			
+		.joined{
+			border-left:1px solid #000;
+			border-right:1px solid #000;
+			background:#EEE;
+		}
+		
+	/* form elements */
+		
+	#caption  {
+		font-weight:bold;
+		font-size:14px;
+		text-align:center;
+	}	
+	
+	tr.hid { display: none; }

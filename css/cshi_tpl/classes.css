@@ -1,0 +1,1072 @@
+		body
+		{
+			 background-color: white;
+			 color: #000000;
+		}
+/* индикация маршрутов */		
+			.Marsh_On{
+				background-color:lime;
+				font-weight:bold;
+			}
+			.Marsh_Off{
+				background-color:lightgrey; 
+				font-weight:bold;
+			}
+			.Marsh_Assemble{
+				background-color:skyblue;
+				font-weight:bold;
+			}
+			.Marsh_Disassemble{
+				background-color:violet;
+				font-weight:bold;
+			}
+			.Marsh_Avar{
+				background-color:red;
+				font-weight:bold;
+			}
+		
+
+/* Линии */
+      .Line_On{
+        display:block;
+        background:url(/ASUTP/img/cshi_tpl/lime.GIF);
+				font-size: 0;
+      }
+      .Line_Off{
+        display:block;
+        background:url(/ASUTP/img/cshi_tpl/black.GIF);
+				font-size: 0;
+      }
+      .Line_Manual{
+        display:block;
+        background:url(/ASUTP/img/cshi_tpl/blue.GIF);
+				font-size: 0;
+      }
+      .Line_Selected{
+        display:block;
+        background:url(/ASUTP/img/cshi_tpl/yellow.GIF); 
+/*        background:url(/ASUTP/img/cshi_tpl/black.GIF); */
+				font-size: 0;
+      }
+      .Line_mech_Assembled{
+        display:block;
+        background:url(/ASUTP/img/cshi_tpl/black.GIF);
+				font-size: 0;
+      }
+      .Line_marsh_Assembled{
+        display:block;
+        background:url(/ASUTP/img/cshi_tpl/black.GIF);
+				font-size: 0;
+      }
+      .Line_marsh_DisAssembled{
+        display:block;
+        background:url(/ASUTP/img/cshi_tpl/black.GIF);
+				font-size: 0;
+      }
+			
+/* Конвейер */
+      .Conveyer_On{
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(/ASUTP/img/cshi_tpl/conveyer_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Conveyer_Off{
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(/ASUTP/img/cshi_tpl/conveyer_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Conveyer_Manual{
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(/ASUTP/img/cshi_tpl/conveyer_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Conveyer_Selected{
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(/ASUTP/img/cshi_tpl/conveyer_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Conveyer_mech_Assembled{
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(/ASUTP/img/cshi_tpl/conveyer_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Conveyer_marsh_Assembled{
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(/ASUTP/img/cshi_tpl/conveyer_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Conveyer_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(/ASUTP/img/cshi_tpl/conveyer_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Conveyer_marsh_DisAssembled{
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(/ASUTP/img/cshi_tpl/conveyer_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Conveyer_marsh_DisAssembled_mech_on{  /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:64px;
+        height:17px;
+        background:url(/ASUTP/img/cshi_tpl/conveyer_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+			
+/* Вращающаяся печь */
+      .VrashPech_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/vrash_pech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .VrashPech_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/vrash_pech_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .VrashPech_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/vrash_pech_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .VrashPech_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/vrash_pech_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .VrashPech_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/vrash_pech_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .VrashPech_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/vrash_pech_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .VrashPech_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/vrash_pech_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .VrashPech_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/vrash_pech_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .VrashPech_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/vrash_pech_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+			
+/* Глинорезная машина */
+      .GlinaCutMashine_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/glina_cut_mashine_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .GlinaCutMashine_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/glina_cut_mashine_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .GlinaCutMashine_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/glina_cut_mashine_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }            
+      .GlinaCutMashine_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/glina_cut_mashine_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }       
+      .GlinaCutMashine_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/glina_cut_mashine_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .GlinaCutMashine_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/glina_cut_mashine_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .GlinaCutMashine_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/glina_cut_mashine_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .GlinaCutMashine_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/glina_cut_mashine_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .GlinaCutMashine_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/glina_cut_mashine_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+			
+/* Пластинчатый питатель */
+      .PlastPitatel_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plast_pit_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlastPitatel_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plast_pit_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlastPitatel_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plast_pit_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }                  
+      .PlastPitatel_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plast_pit_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }      
+      .PlastPitatel_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plast_pit_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlastPitatel_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plast_pit_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlastPitatel_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plast_pit_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlastPitatel_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plast_pit_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+      .PlastPitatel_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plast_pit_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+/* Шаровая мельница */
+      .BallsMill_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/balls_mill_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .BallsMill_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/balls_mill_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .BallsMill_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/balls_mill_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .BallsMill_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/balls_mill_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .BallsMill_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/balls_mill_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .BallsMill_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/balls_mill_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .BallsMill_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/balls_mill_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .BallsMill_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/balls_mill_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+      .BallsMill_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/balls_mill_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+/* Холодильник */
+      .Refregerator_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/refregerator_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Refregerator_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/refregerator_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Refregerator_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/refregerator_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Refregerator_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/refregerator_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Refregerator_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/refregerator_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Refregerator_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/refregerator_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Refregerator_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/refregerator_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Refregerator_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/refregerator_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+      .Refregerator_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/refregerator_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+			
+/* Вентилятор/Дымосос */
+      .Ventilator_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/ventilator_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Ventilator_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/ventilator_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Ventilator_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/ventilator_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Ventilator_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/ventilator_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Ventilator_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/ventilator_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Ventilator_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/ventilator_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Ventilator_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/ventilator_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Ventilator_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/ventilator_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+      .Ventilator_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/ventilator_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+/* Элеватор */
+      .Elevator_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/elevator_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Elevator_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/elevator_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Elevator_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/elevator_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Elevator_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/elevator_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Elevator_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/elevator_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Elevator_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/elevator_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Elevator_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/elevator_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Elevator_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/elevator_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+      .Elevator_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/elevator_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+/* Блокировка */
+      .Block_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/block_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Block_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/block_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Block_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/block_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Block_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/block_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+/* Грохот */
+      .Grohot_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/grohot_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Grohot_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/grohot_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Grohot_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/grohot_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Grohot_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/grohot_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Grohot_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/grohot_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Grohot_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/grohot_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Grohot_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/grohot_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Grohot_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/grohot_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+      .Grohot_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/grohot_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+/* Тарельчатый питатель */
+      .PlatePitatel_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plate_pitatel_on.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlatePitatel_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plate_pitatel_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlatePitatel_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plate_pitatel_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }      
+      .PlatePitatel_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plate_pitatel_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }      
+      .PlatePitatel_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plate_pitatel_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlatePitatel_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plate_pitatel_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlatePitatel_marsh_Assembled_mech_on{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plate_pitatel_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .PlatePitatel_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plate_pitatel_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+      .PlatePitatel_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/plate_pitatel_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+/* Магнит */
+      .Magnit_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/magnit_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Magnit_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/magnit_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Magnit_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/magnit_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }           
+      .Magnit_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/magnit_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }           
+      .Magnit_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/magnit_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Magnit_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/magnit_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Magnit_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/magnit_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Magnit_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/magnit_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+      .Magnit_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/magnit_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+/* Сушильный барабан */
+      .SushBaraban_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/sush_baraban_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .SushBaraban_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/sush_baraban_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .SushBaraban_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/sush_baraban_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }     
+      .SushBaraban_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/sush_baraban_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }   
+      .SushBaraban_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/sush_baraban_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .SushBaraban_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/sush_baraban_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .SushBaraban_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/sush_baraban_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .SushBaraban_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/sush_baraban_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+      .SushBaraban_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/sush_baraban_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+			
+/* Камнеотделительные вальцы */
+      .StoneOtdelitVal_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/stone_otdelit_val_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .StoneOtdelitVal_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/stone_otdelit_val_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .StoneOtdelitVal_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/stone_otdelit_val_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }                 
+      .StoneOtdelitVal_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/stone_otdelit_val_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }   
+      .StoneOtdelitVal_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/stone_otdelit_val_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .StoneOtdelitVal_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/stone_otdelit_val_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .StoneOtdelitVal_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/stone_otdelit_val_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .StoneOtdelitVal_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/stone_otdelit_val_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+      .StoneOtdelitVal_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/stone_otdelit_val_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+			
+/* Лотковый питатель */
+      .LotPitatel_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/lot_pitatel_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .LotPitatel_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/lot_pitatel_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .LotPitatel_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/lot_pitatel_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }                 
+      .LotPitatel_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/lot_pitatel_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      } 
+      .LotPitatel_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/lot_pitatel_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .LotPitatel_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/lot_pitatel_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .LotPitatel_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/lot_pitatel_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .LotPitatel_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/lot_pitatel_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+      .LotPitatel_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/lot_pitatel_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }			
+			
+/* Дезинтегратор */
+      .Dezintegrator_On{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/dezintegrator_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Dezintegrator_Off{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/dezintegrator_off.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Dezintegrator_Manual{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/dezintegrator_manual.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }                 
+      .Dezintegrator_Selected{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/dezintegrator_selected.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }  
+      .Dezintegrator_mech_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/dezintegrator_mech_assembled.gif) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Dezintegrator_marsh_Assembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/dezintegrator_marsh_assembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Dezintegrator_marsh_Assembled_mech_on{ /* маршрут собирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/dezintegrator_marsh_assembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }
+      .Dezintegrator_marsh_DisAssembled{
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/dezintegrator_marsh_disassembled.GIF) no-repeat scroll 0px 0px;
+        float:left;
+      }																		 
+      .Dezintegrator_marsh_DisAssembled_mech_on{ /* маршрут разбирается механизм работает в ручную */
+        display:block;
+        width:33px;
+        height:33px;
+        background:url(/ASUTP/img/cshi_tpl/dezintegrator_marsh_disassembled_mech_on.GIF) no-repeat scroll 0px 0px;
+        float:left;    										 
+      }																		 
+			
+.analog_value  /* Стиль отображения аналоговых значений */
+{
+  font-size:20px; 
+  font-weight: bold; 
+/*  color:#000000; */
+  color: white;
+  font-style: normal;
+  font-family: Arial;
+}			

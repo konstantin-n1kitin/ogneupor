@@ -1,0 +1,52 @@
+﻿body
+{
+   background-color: #FFFFFF;
+   background:url(/ASUTP/img/csi_tunneldry/mnemo.jpg);
+   background-repeat: no-repeat;
+   color: #000000;
+/*   overflow-y: scroll; */
+}
+  .Ventilator_Off{
+    display:block;
+    width:93px;
+    height:70px;
+    background:url(/ASUTP/img/csi_tunneldry/ventilator_off.gif) no-repeat scroll 0px 0px;
+    float:left;
+  }
+  .Ventilator_On{
+    display:block;
+    width:93px;
+    height:70px;
+    background:url(/ASUTP/img/csi_tunneldry/ventilator_on.gif) no-repeat scroll 0px 0px;
+    float:left;
+  }
+
+	.analog_value  /* Стиль отображения аналоговых значений */
+	{
+		font-size:14px; 
+		font-weight: 0; 
+/*		color:#000000;  */
+		font-style: normal;
+		font-family: Arial;
+		text-align:left;
+		padding-left: 0px;
+		font-weight:bold;
+	}
+	.text_value /* стиль отображения текстовых значений (описание параметров) */
+	{
+		font-size:14px; 
+		font-weight: 0; 
+		color:#000000; 
+		font-style: normal;
+		font-family: Arial;
+		text-align:left;
+		padding-left: 0px;
+	}
+	td
+	{
+		font-size:16px; 
+		font-weight: normal; 
+		color:#000000;
+		font-style: normal;
+		font-family: Arial;
+	}

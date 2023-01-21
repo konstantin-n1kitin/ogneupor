@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/ASUTP/css/local_menu/menu_ie.css" type="text/css" />
+<!--h3 id="menu_header">Транспортно-поточные линии</h3-->
+<div id="local_menu">
+  <ul>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_oxygen">Кислород ЦШИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=csi_oxygen">Кислород ЦСИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_rotating_oven_1_coke_gas">Коксовый газ вращ. печи №1 ЦШИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_rotating_oven_2_coke_gas">Коксовый газ вращ. печи №2 ЦШИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_rotary_drier1_coke_gas">Коксовый газ суш. барабана №1 ЦШИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_rotary_drier2_coke_gas">Коксовый газ суш. барабана №2 ЦШИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_rotary_drier3_coke_gas">Коксовый газ суш. барабана №3 ЦШИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=csi_rotary_driers_coke_gas_DPU">Коксовый газ на суш. барабаны ДПУ ЦСИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=csi_rotary_driers_coke_gas_DPandFU">Коксовый газ на суш. барабаны ДП и ФУ ЦСИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_tunnel_furnaces_coke_gas">Коксовый газ на туннел.печи ЦШИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=csi_forge_furnaces_coke_gas">Коксовый газ на кузнечную печь ЦСИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=csi_coke_gas_heating_fu_1_2">Коксовый газ цементационные печи №1,2 ЦСИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=csi_steam">Пар</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=csi_steam_teh">Пар ЦСИ - технология</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_natural_gas">Природный газ ЦШИ выс. сторона</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=csi_natural_gas">Природный газ ЦСИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cmdo_natural_gas">Природный газ ЦМДО</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_compressed_air">Сжатый воздух ЦШИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_compressed_air_gas_cleaning">Сжатый воздух ЦШИ - Газоочистка</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_compressed_air_formovka">Сжатый воздух формовка ЦШИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=csi_compressed_air">Сжатый воздух ЦСИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_thermalclamping_water">Теплофикационная вода ЦШИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=csi_thermalclamping_water">Теплофикационная вода ЦСИ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=electro">Электроэнергия</a></li>
+        <!--li><a href="/ASUTP/localmenu/askureports/id=drinking_water_1">Пожарно-питьевая вода. Быт. ввод №2 (бойлер) ЦШИ</a></li
+      li><a href="/ASUTP/localmenu/askureports/id=drinking_water_1">Пожарно-питьевая вода. Быт. ввод №1 (зап. вых.) ЦШИ</a></li
+      li><a href="/ASUTP/localmenu/askureports/id=drinking_water_1">Пожарно-питьевая вода. Маст. энергослужбы ЦШИ</a></li
+      li><a href="/ASUTP/localmenu/askureports/id=drinking_water_1">Пожарно-питьевая вода. ЦШИ АБК столовая</a></li
+      li><a href="/ASUTP/localmenu/askureports/id=drinking_water_1">Пожарно-питьевая вода. Бытовые ЦСИ</a></li
+      li><a href="/ASUTP/localmenu/askureports/id=drinking_water_1">Пожарно-питьевая вода. Мех. мастерская</a></li-->
+  </ul>
+</div>
+<h3 id="menu_header">Общие данные</h3>
+<div id="local_menu">
+  <ul>
+		<li><a href="/ASUTP/localmenu/askureports/id=total_oxygen">Кислород</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=total_coke_gas">Коксовый газ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=total_steam">Пар</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=total_natural_gas">Природный газ</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=total_compressed_air">Сжатый воздух</a></li>
+		<li><a href="/ASUTP/localmenu/askureports/id=cshi_analysis1">Анализ энергоресурсов ЦШИ</a></li>
+  </ul>
+</div>
