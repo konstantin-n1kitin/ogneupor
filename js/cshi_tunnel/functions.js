@@ -54,7 +54,7 @@ function UpdateElements(ServerAnswer) {
         ElementName = GetElementName(Elements[i]);
         ElementValue = GetElementValue(Elements[i]);
 //          alert('EN='+ElementName+'  EV='+ElementValue);      
-        SwitchDbElement(ElementName, ElementValue);
+        SwitchElement(ElementName, ElementValue);
     }
 }
 
@@ -69,7 +69,7 @@ function UpdateDbElements(ServerAnswer) {
         ElementValue = GetDbElementValue(Elements[i]);
         ElementStatus = GetDbElementStatus(Elements[i]);
 //          alert('EN='+ElementName+'  EV='+ElementValue);
-        SwitchElement(ElementName, ElementValue, ElementStatus);
+        SwitchDbElement(ElementName, ElementValue, ElementStatus);
     }
 }
 
@@ -122,7 +122,7 @@ function SwitchDbElement(ID, value, status) {
         {
             switch (ID) {
                 case '2500':
-                    obj.innerHTML = value + " <sup>o</sup>C";
+                    obj.textContent = value + " <sup>o</sup>C";
                     break;
             }
         }
@@ -131,7 +131,7 @@ function SwitchDbElement(ID, value, status) {
         {
             switch (ID) {
                 case '2501':
-                    obj.innerHTML = value + " <sup>o</sup>C";
+                    obj.textContent = value + " <sup>o</sup>C";
                     break;
             }
         }
