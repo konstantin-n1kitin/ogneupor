@@ -31,6 +31,20 @@ function GetElementValue(Element) {
 }
 
 //------------------------------------------------------------------------------
+function GetDbElementValue(Element) {
+    var EqualityPosition = Element.indexOf("=");
+    var EqualityPosition2 = Element.indexOf("|");
+    ElementValue = Element.slice(EqualityPosition + 1, EqualityPosition2);
+    return ElementValue;
+}
+
+function GetDbElementStatus(Element) {
+    var EqualityPosition = Element.indexOf("|");
+    ElementValue = Element.slice(EqualityPosition + 1, Element.length);
+    return ElementValue;
+}
+
+//------------------------------------------------------------------------------
 function UpdateElements(ServerAnswer) {
     var Elements = [];
     var ElementName;
@@ -40,7 +54,22 @@ function UpdateElements(ServerAnswer) {
         ElementName = GetElementName(Elements[i]);
         ElementValue = GetElementValue(Elements[i]);
 //          alert('EN='+ElementName+'  EV='+ElementValue);      
-        SwitchElement(ElementName, ElementValue);
+        SwitchDbElement(ElementName, ElementValue);
+    }
+}
+
+//------------------------------------------------------------------------------
+function UpdateDbElements(ServerAnswer) {
+    var Elements = new Array();
+    var ElementName;
+    var ElementValue;
+    Elements = ServerAnswer.split(";");
+    for (var i = 0; i < Elements.length; i++) {
+        ElementName = GetElementName(Elements[i]);
+        ElementValue = GetDbElementValue(Elements[i]);
+        ElementStatus = GetDbElementStatus(Elements[i]);
+//          alert('EN='+ElementName+'  EV='+ElementValue);
+        SwitchElement(ElementName, ElementValue, ElementStatus);
     }
 }
 
@@ -58,7 +87,6 @@ function SwitchElement(element, state) {
                     break;
                 }
                 case ('1'): {
-//            alert(ClassName + "" + ClassState + " = " + state);  
                     if (Element.className != ClassName + '_On')
                         Element.className = ClassName + '_On';
                     break;
@@ -85,10 +113,44 @@ function SwitchElement(element, state) {
 }
 
 //------------------------------------------------------------------------------
+function SwitchDbElement(ID, value, status) {
+    var Element = document.getElementById(ID);
+    if (Element != null) {
+    } else {
+        var obj = document.getElementById('Ecom_1');
+        if (obj != null)
+        {
+            switch (ID) {
+                case '2500':
+                    obj.innerHTML = value + " <sup>o</sup>C";
+                    break;
+            }
+        }
+        var obj = document.getElementById('Ecom_2');
+        if (obj != null)
+        {
+            switch (ID) {
+                case '2501':
+                    obj.innerHTML = value + " <sup>o</sup>C";
+                    break;
+            }
+        }
+    }
+}
+
+//------------------------------------------------------------------------------
 function processRequestChange() {
     if (request.readyState == 4) {
 //          alert('ответ:'+request.responseText);
         UpdateElements(request.responseText)
+    }
+}
+
+//------------------------------------------------------------------------------
+function processRequestDbChange() {
+    if (requestDb.readyState == 4) {
+        //alert('ответ:'+request.responseText);
+        UpdateDbElements(requestDb.responseText)
     }
 }
 
@@ -106,5 +168,16 @@ function SendRequest() {
 //          alert('request');          
     } else
         alert('ошибка при создании xmlrequest!')
+
+    if (!window.XMLHttpRequest)
+        requestDb = new ActiveXObject("Msxml2.XMLHTTP");
+    else
+        requestDb = new XMLHttpRequest();
+    if (requestDb != null) {
+        requestDb.onreadystatechange = processRequestDbChange;
+        requestDb.open("POST", "/ASUTP/php/tunnel_currents/AddMoreInformation.php", false);
+        requestDb.send(null);
+    } else
+        alert('ошибка при создании xmlrequest!');
     setTimeout('SendRequest()', 5000)
 }

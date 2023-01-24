@@ -90,7 +90,7 @@
   <div id="T_left_13" class="analog_value" style="position:absolute;left:549px;top:239px;width:100px;height:16px;text-align:left;z-index:17;">T= - C</div>
   <div id="T_left_15" class="analog_value" style="position:absolute;left:623px;top:239px;width:100px;height:16px;text-align:left;z-index:18;">T= - C</div>
   <div id="T_left_9" class="analog_value" style="position:absolute;left:475px;top:342px;width:63px;height:16px;text-align:left;z-index:76;">T= - C</div>
-	
+
   <div id="T_15sw" class="analog_value" style="position:absolute;left:623px;top:539px;width:100px;height:16px;text-align:left;z-index:19;">T= - C</div>
   <div id="F_air_right_zone1" class="analog_value" style="position:absolute;left:625px;top:591px;width:100px;height:16px;text-align:left;z-index:20;">F= - м3/ч</div>
   <div id="F_gas_right_zone1" class="analog_value" style="position:absolute;left:625px;top:607px;width:100px;height:16px;text-align:left;z-index:21;">F= - м3/ч</div>
@@ -132,24 +132,27 @@
   <div id="ManualAuto_gas-air" class="analog_value" style="position:absolute;left:990px;top:140px;width:26px;height:16px;text-align:left;z-index:57;">Р/А</div>
   <div id="P_gas_on_furn" class="analog_value" style="position:absolute;left:254px;top:715px;width:100px;height:16px;text-align:left;z-index:58;">P= - кгс/м2</div>
   <div id="F_gas_on_furn_current" class="analog_value" style="position:absolute;left:247px;top:747px;width:120px;height:16px;text-align:left;z-index:59;">F= - м3/ч</div>
-  
 
-  
+
+
   <div id="F_gas_on_furn_task" class="analog_value" style="position:absolute;left:247px;top:764px;width:100px;height:16px;text-align:left;z-index:60;">F= - м3/ч</div>
-  
-  
- <!-- Новое Для ТП1 и ТП3 --> 
+
+
+ <!-- Новое Для ТП1 и ТП3 -->
   <div id="T_23L_TP1" class="analog_value" style="position:absolute;left:800px;top:850px;width:100px;height:16px;text-align:left;z-index:0;background-color:#FA8D68;">T= - C</div>
   <div id="T_22R_TP1" class="analog_value" style="position:absolute;left:800px;top:866px;width:100px;height:16px;text-align:left;z-index:0;background-color:#FA8D68;">T= - C</div>
   <div id="Text_23L_TP1" class="text" style="position:absolute;left:700px;top:850px;width:100px;height:16px;text-align:left;z-index:0;font-size: 14px;">ТП1 23п лев</div>
   <div id="Text_22R_TP1" class="text" style="position:absolute;left:700px;top:866px;width:100px;height:16px;text-align:left;z-index:0;font-size: 14px;">ТП1 22п прав</div>
-  
+
   <div id="T_23L_TP3" class="analog_value" style="position:absolute;left:1050px;top:850px;width:100px;height:16px;text-align:left;z-index:0;background-color:#FA8D68;">T= - C</div>
   <div id="T_22R_TP3" class="analog_value" style="position:absolute;left:1050px;top:866px;width:100px;height:16px;text-align:left;z-index:0;background-color:#FA8D68;">T= - C</div>
   <div id="Text_23L_TP3" class="text" style="position:absolute;left:950px;top:850px;width:100px;height:16px;text-align:left;z-index:0;font-size: 14px;">ТП3 23п лев</div>
   <div id="Text_22R_TP3" class="text" style="position:absolute;left:950px;top:866px;width:100px;height:16px;text-align:left;z-index:0;font-size: 14px;">ТП3 22п прав</div>
-  
-</div>
+
+<!-- Значения из ЭКОМ -->
+<div id="Ecom_1" class="analog_value" style="position:absolute;left:1300px;top:100px;width:100px;height:16px;text-align:left;z-index:0;font-size: 14px;">T= - C</div>
+<div id="Ecom_2" class="analog_value" style="position:absolute;left:1300px;top:200px;width:100px;height:16px;text-align:left;z-index:0;font-size: 14px;">T= - C</div>
+
 <div id='dialog' style='overflow-y: scroll; text-align:center; font-size:13px;'>
   <p></p>
 </div>
