@@ -122,7 +122,7 @@ function SwitchDbElement(ID, value, status) {
         {
             switch (ID) {
                 case '2500':
-                    obj.textContent = value + " <sup>o</sup>C";
+                    obj.innerHTML = value + " <sup>o</sup>C";
                     break;
             }
         }
@@ -131,7 +131,7 @@ function SwitchDbElement(ID, value, status) {
         {
             switch (ID) {
                 case '2501':
-                    obj.textContent = value + " <sup>o</sup>C";
+                    obj.innerHTML = value + " <sup>o</sup>C";
                     break;
             }
         }
