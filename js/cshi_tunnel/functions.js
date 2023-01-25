@@ -117,21 +117,21 @@ function SwitchDbElement(ID, value, status) {
     var Element = document.getElementById(ID);
     if (Element != null) {
     } else {
-        var obj = document.getElementById('Ecom_1');
+        var obj = document.getElementById('P_ceh');
         if (obj != null)
         {
             switch (ID) {
-                case '2500':
-                    obj.innerHTML = value + " <sup>o</sup>C";
+                case '67':
+                    obj.innerHTML = "P=" + value + " кгс/м<sup>2</sup>";
                     break;
             }
         }
-        var obj = document.getElementById('Ecom_2');
+        var obj = document.getElementById('F_ceh');
         if (obj != null)
         {
             switch (ID) {
-                case '2501':
-                    obj.innerHTML = value + " <sup>o</sup>C";
+                case '328':
+                    obj.innerHTML = "F=" + value + "*10<sup>3</sup> м<sup>3</sup>/ч";
                     break;
             }
         }

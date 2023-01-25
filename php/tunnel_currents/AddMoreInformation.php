@@ -1,6 +1,6 @@
 <?php
 $result_str = "";
-$base_sql = "SELECT ID_Channel, MeasureDate, Value, State FROM Currents	WHERE  ID_Channel = 2500 or ID_Channel = 2501";
+$base_sql = "SELECT ID_Channel, MeasureDate, Value, State FROM Currents	WHERE  ID_Channel = 67 or ID_Channel = 328";
 
 $sql_order_by = " ORDER BY ID_Channel";
 $sql = sprintf("%s%s", $base_sql, $sql_order_by); //Готовый SQL запрос

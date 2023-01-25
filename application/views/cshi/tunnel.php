@@ -150,8 +150,8 @@
   <div id="Text_22R_TP3" class="text" style="position:absolute;left:950px;top:866px;width:100px;height:16px;text-align:left;z-index:0;font-size: 14px;">ТП3 22п прав</div>
 
 <!-- Значения из ЭКОМ -->
-<div id="Ecom_1" class="analog_value" style="position:absolute;left:1300px;top:100px;width:100px;height:16px;text-align:left;z-index:0;font-size: 14px;">T= - C</div>
-<div id="Ecom_2" class="analog_value" style="position:absolute;left:1300px;top:200px;width:100px;height:16px;text-align:left;z-index:0;font-size: 14px;">T= - C</div>
+<div id="P_ceh" class="analog_value" style="position:absolute;left:1300px;top:100px;width:100px;height:16px;text-align:left;z-index:0;font-size: 12px;">P= -</div>
+<div id="F_ceh" class="analog_value" style="position:absolute;left:1300px;top:200px;width:100px;height:16px;text-align:left;z-index:0;font-size: 12px;">F= -</div>
 
 <div id='dialog' style='overflow-y: scroll; text-align:center; font-size:13px;'>
   <p></p>
