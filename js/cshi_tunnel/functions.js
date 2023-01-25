@@ -131,7 +131,7 @@ function SwitchDbElement(ID, value, status) {
         {
             switch (ID) {
                 case '328':
-                    obj.innerHTML = "F=" + value + "*10<sup>3</sup> м<sup>3</sup>/ч";
+                    obj.innerHTML = "F=" + value + " м<sup>3</sup>/ч";
                     break;
             }
         }
